@@ -7,6 +7,7 @@
 }
 h1
 {
+  padding-left: 20px;
   align-self: center;
   font-size: 50px;
   font-family: 'Bebas Neue', cursive;
@@ -26,6 +27,10 @@ h1
   font-size: 20px;
   font-weight: bold;
   font-family: 'Teko', sans-serif;
+  text-decoration: none;
+}
+.container-nav nav a:hover{
+  color: aliceblue;
 }
 .container-nav nav input{
   margin-left: 10px;
