@@ -1,0 +1,37 @@
+.container-flex{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(22, 112, 247);
+}
+h1
+{
+  align-self: center;
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
+.container-nav{
+  display: flex;
+  position: relative;
+  height: 80px;
+  width: 400px;
+  align-items: center;
+  float: right;
+}
+
+.container-nav nav a{
+  padding-left: 20px;
+  color:rgb(2, 5, 8);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Teko', sans-serif;
+}
+.container-nav nav input{
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.container-nav nav .search{
+  padding-left: 50px;
+}
