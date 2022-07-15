@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    internal class UsuarioModel
+    public class UsuarioModel
     {
+        
         private int usuarioID;
         private string nome;
         private string senha;

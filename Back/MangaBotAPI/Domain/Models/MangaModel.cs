@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    internal class MangaModel
+    public class MangaModel
     {
         private int mangaID;
         public int MangaID
