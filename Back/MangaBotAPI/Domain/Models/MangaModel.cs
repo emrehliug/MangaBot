@@ -23,5 +23,6 @@ namespace Domain.Models
         public string Nome { get; set; }
         public string Url { get; set; }
         public int NumCapitulos { get; set; }
+
     }
 }

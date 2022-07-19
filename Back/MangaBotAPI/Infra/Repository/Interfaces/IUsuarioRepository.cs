@@ -8,6 +8,6 @@ namespace Infra.Repository.Interfaces
 {
     public interface IUsuarioRepository
     {
-        public 
+        
     }
 }
