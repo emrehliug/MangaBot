@@ -14,7 +14,7 @@ namespace Domain.Models
         private string nome;
         private string senha;
         private string email;
-
+        [Key]
         public int UsuarioID
         {
             get
