@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace Infra.Context
 
         public MangaBotContext(DbContextOptions<MangaBotContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
@@ -24,7 +25,9 @@ namespace Infra.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Usuario_MangaModel>().HasKey(pe => new { pe.MangaID,pe.UsuarioID});
+            modelBuilder.Entity<Usuario_MangaModel>().HasNoKey();
         }
     }
 }

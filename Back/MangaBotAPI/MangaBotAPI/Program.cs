@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MangaBotContext>(
-    contextdb => contextdb.UseMySQL(builder.Configuration.GetConnectionString("MySql"))
+    contextdb => contextdb.UseMySql(builder.Configuration.GetConnectionString("MySql"),ServerVersion.AutoDetect("Server=186.202.152.149;Database=photobreak3;Uid=photobreak3;Pwd=Brasil@00;Persist Security Info=True;sslmode=None;"))
     );
 builder.Services.AddScoped<IMangaRepository, MangaRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
